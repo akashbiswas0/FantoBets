@@ -1,25 +1,26 @@
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { useAccount } from "wagmi"; // Import useAccount to check connection status
-import { useRouter } from "next/navigation"; // Import useRouter for redirection
+import { useRouter, usePathname } from "next/navigation"; // Import usePathname to get the current route
 import { useEffect } from "react";
 
 export default function Navbar() {
     const { isConnected } = useAccount(); // Check if wallet is connected
     const router = useRouter(); // Initialize Next.js router for navigation
+    const pathname = usePathname(); // Get the current path
 
-    // Redirect to another page if the user is connected
+    // Redirect only if the user is on the landing page and connected
     useEffect(() => {
-        if (isConnected) {
+        if (isConnected && pathname === "/") {
             router.push("/availablegames"); // Redirect to the desired page
         }
-    }, [isConnected, router]); // Run effect when connection status changes
+    }, [isConnected, router, pathname]); // Run effect when connection status or pathname changes
 
     return (
         <div>
-            <header className="bg-neutral-300 py-4 px-6 flex justify-between items-center rounded-sm">
+            <header className="bg-neutral-800 py-4 px-6 flex justify-between items-center rounded-sm">
                 <Link href="/">
-                    <h1 className="text-4xl font-extrabold font-body text-pink-700">
+                    <h1 className="text-4xl font-extrabold font-body text-pink-700 ml-8">
                         FantoBet
                     </h1>
                 </Link>
