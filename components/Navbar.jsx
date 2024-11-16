@@ -21,7 +21,7 @@ export default function Navbar() {
             <header className="bg-neutral-800 py-4 px-6 flex justify-between items-center rounded-sm">
                 <Link href="/">
                     <h1 className="text-4xl font-extrabold font-body text-pink-700 ml-8">
-                        FantoBet
+                        FantoBets
                     </h1>
                 </Link>
                 <div className="flex space-x-2">
