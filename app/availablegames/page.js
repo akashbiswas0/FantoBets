@@ -10,7 +10,7 @@ export default function Availablegames() {
   ]
 
   const handleGameClick = (gameId) => {
-    router.push(`/selected-match/${gameId}`)
+    router.push(`/selected-game`)
   }
 
   return (
