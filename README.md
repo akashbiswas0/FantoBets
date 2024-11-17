@@ -1,36 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FantoBets
 
-## Getting Started
+- FantoBets is a new and exciting sports betting app designed for fans who want a simple and engaging way to bet on their favorite games. It uses fan tokens, which are digital passes that show you're a true supporter of a team. The app works by letting users share their predictions, called "intents," about the outcome of a game. This makes betting straightforward and fun, without any complicated processes.
 
-First, run the development server:
+- After the game is over, FantoBets automatically checks the results and rewards users who made correct predictions. There's no need to worry about delays or fairness because everything is done smoothly and transparently. By using fan tokens, the app ensures that only real fans can join in, making it a special experience for sports enthusiasts.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- FantoBets is all about bringing fans closer to the action while keeping things easy and enjoyable. It's a great way for fans to support their teams, test their predictions, and win prizes. With its focus on fans and fairness, FantoBets offers a fresh and fun way to enjoy sports betting like never before.
