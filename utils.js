@@ -109,7 +109,7 @@ export async function setupEventListeners(callback) {
         await connectWithMetamask();
         const contract = new ethers.Contract(contractAddress, contractAbi, provider);
 
-        // Listen for bet placed events
+        // Listen for bet placed events on chiliz
         contract.on("BetPlaced", (gameId, bettor, amount, predictedScore, teamChoice) => {
             callback({
                 event: "BetPlaced",
