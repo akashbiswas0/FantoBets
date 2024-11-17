@@ -6,9 +6,6 @@ import BettingForm from "../../components/BettingForm";
 
 export default function SelectedGames() {
   const [intent, setIntent] = useState('')
-  const [gameId, setGameId] = useState('')
-  const [predictedScore, setPredictedScore] = useState('')
-  const [teamChoice, setTeamChoice] = useState('')
   
   // const handleSubmit = (e) => {
   //   e.preventDefault()

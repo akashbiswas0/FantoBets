@@ -48,7 +48,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-xl font-bold mb-4">GameBet</h3>
+              <h3 className="text-xl font-bold mb-4">FantoBets</h3>
               <p className="text-gray-400">The ultimate sports betting platform.</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -84,7 +84,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center text-gray-400">
-            © 2023 GameBet. All rights reserved.
+            
           </div>
         </div>
       </footer>
