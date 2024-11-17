@@ -1,4 +1,4 @@
-export const contractAddress = "0xFd2a097b56606Ac0842eA332271915428840cf97";
+export const contractAddress = "0x370cE9bcAd5A0018e3eCBd50d4e4b7F4A1Ca319e";
 export const contractAbi = [
 	{
 		"inputs": [
@@ -49,7 +49,18 @@ export const contractAbi = [
 		"type": "event"
 	},
 	{
-		"inputs": [],
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_team1fantokenaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_team2fantokenaddress",
+				"type": "address"
+			}
+		],
 		"name": "createGame",
 		"outputs": [
 			{
@@ -180,6 +191,16 @@ export const contractAbi = [
 		],
 		"name": "games",
 		"outputs": [
+			{
+				"internalType": "address",
+				"name": "team1fantokenaddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "team2fantokenaddress",
+				"type": "address"
+			},
 			{
 				"internalType": "uint256",
 				"name": "gameId",

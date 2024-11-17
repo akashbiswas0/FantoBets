@@ -43,7 +43,7 @@ export default function SelectedGames() {
           </div>
         </div>
         <div className="space-y-6">
-        <h1 className='text-purple-200 mt-6 text-xl'>Place your bet below</h1>
+        <h1 className='text-purple-200 mt-6 text-3xl font-bold'>Place your bet below</h1>
         
        <BettingForm />
                 <div className='border border-white'></div>

@@ -30,7 +30,7 @@ const BettingForm = () => {
         parseFloat(betAmount)
       );
 
-      setSuccess('Bet placed successfully! Transaction hash: ' + receipt.transactionHash);
+      setSuccess('Bet placed successfully!');
       // Reset form
       setGameId('');
       setPredictedScore('');
