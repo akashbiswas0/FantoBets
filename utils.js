@@ -19,18 +19,18 @@ export async function connectWithMetamask() {
 connectWithMetamask();
 
 // Create a new game
-export async function createGame() {
+export async function createGame(team1TokenAddress, team2TokenAddress) {
     try {
-        await connectWithMetamask();
-        const contract = new ethers.Contract(contractAddress, contractAbi, signer);
-        const tx = await contract.createGame();
-        const receipt = await tx.wait();
-        return receipt;
+      const signer = await connectWithMetamask();
+      const contract = new ethers.Contract(contractAddress, contractAbi, signer);
+      const tx = await contract.createGame(team1TokenAddress, team2TokenAddress);
+      const receipt = await tx.wait();
+      return receipt;
     } catch (error) {
-        console.error("Error in createGame:", error);
-        throw error;
+      console.error("Error in createGame:", error);
+      throw error; 
     }
-}
+  }
 
 // Place a bet on a game
 export async function placeBet(gameId, predictedScore, teamChoice, betAmount) {
